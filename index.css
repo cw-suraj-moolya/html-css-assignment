@@ -29,7 +29,7 @@ a{
     width: 200px;
     height: 200px;
     border-radius: 50%;
-}
+} 
 .banner_content{
     display: inline-flex;
     /* align-items: flex-end; */
