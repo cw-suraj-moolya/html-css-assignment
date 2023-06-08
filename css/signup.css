@@ -111,10 +111,10 @@ body{
 }
 @media screen and (max-width:600px) {
     .form{
-        width : 80%;
+        width : 95%;
     }
     .center{
-        width: 95%;;
+        width: 100%;;
     }
     .modal{
         width: 80%;
