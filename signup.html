@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="css/signup.css">
+</head>
+<body>
+    <div class="center">
+        
+        <form  method="post" class="form" id="form">
+            <div class="heading"> SIGN UP</div>
+            <div class="form-field">
+                <label for="username">Username:</label>
+            <input type="text" name="username" placeholder="Enter your username" id="username">
+            <p>Username must be between 3 and 25 characters</p>
+            </div>
+            <div class="form-field">
+                <label for="email">Email:</label>
+            <input type="email" name="username" placeholder="Enter your email" id="email">
+            <p>Enter the valid email address</p>
+            </div>
+            <div class="form-field">
+                <label for="password">Password:</label>
+            <div class="password">
+                <input type="password" name="password" placeholder="Enter your Password" id="password"> <i class="fa-solid fa-eye  eye" id="togglePassword"></i>
+            </div>
+            <p>Password must be atleast 8 charaters long.</p>
+            <p>Password must contain alteast one lowecase, uppercase, numerica and special characters</p>
+            </div>
+            <div class="form-field">
+                <label for="rePassword">Confirm Password:</label>
+            <div class="password">
+                <input type="password" name="rePassword" placeholder="Renter your password" id="rePassword"><i class="fa-solid fa-eye eye" id="reTogglePassword"></i>
+            </div>
+            <p>Password didn't matched with the previous entered password</p>
+            </div>
+            <button type="submit"  class="signup" id = "signup" disabled>SIGN UP
+            </button>
+            
+
+        </form>
+    </div>
+    <div class="modal popup-hide" id="modal">
+        <i class="far fa-window-close fa-lg" aria-hidden="true" id ="popup-close"></i>
+        <div class="popup-message" id = "popup-message">
+            Yay! You have been signed up......
+        </div>
+    </div>
+    <script src="src/validate.js"></script>
+</body>
+</html>
